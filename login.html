@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ <!-- To Link CSS FILE -->
+ <link rel="stylesheet" href="style.css">
+
+ <!-- TO Link BOXICON Icons -->
+ <link rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+ <!-- To Link Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Prompt:wght@600&display=swap" rel="stylesheet">
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            min-height: 100vh; 
+            background-color: rgb(35, 52, 52);
+        }
+        h3{
+            color: rgb(65, 128, 65);
+        }
+        .container {
+            background-color: white;
+            width: 300px;
+            height: 380px;
+            text-align: center;
+            padding:7px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        .container h3 {
+            margin-top: 10px; 
+        }
+       
+        .container button {
+            width: 60%;
+            background-color: rgb(61, 61, 124);
+            color: white; 
+            border-radius: 5px;
+            cursor: pointer;
+            width: 60%;
+            height: 30px;
+        }
+        h4 {
+            display: flex;
+            flex-direction: row;
+        }
+        h4:before,
+        h4:after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid #000;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header id="Shoe_World">
+        <a href="#landing_page" class="shoe_logo">
+            <img src="./img/Shoe_Logo.png" alt="Shoe_World">
+        </a>
+
+        <!-- Menu Bar -->
+        <i class='bx bx-menu' id="hamburg_icon"></i>
+
+        <!-- To Add Headings -->
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Men's Wear</a></li>
+            <li><a href="women.html">Women's Wear</a></li>
+            <li><a href="kid.html">Kids</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <!-- <li><a href="register.html">Login/Register</a></li> -->
+        </ul>
+
+        <div class="header_icon">
+          
+           <!-- location -->
+           <a href=""><h6>find location</h6><ion-icon name="location-outline"></ion-icon></a> 
+           <!-- Account -->
+           <a href="register.html"><h6>Account</h6><ion-icon name="person-circle-outline"></ion-icon></a>
+            <!-- Cart Icon -->
+            <a href=""><h6>cart</h6> <i class='bx bxs-cart'></i></a>
+        </div>
+    </header><br><br><br>
+<section class="mainContainer">
+    <div class="container">
+        <h3>LOGIN</h3><br>
+        <label for="uname">Email</label><br/>
+        <input type="email"  id="email"><br/><br/>
+        <label for="pass">Password</label><br/>
+        <input type="password" id="pass"><br/>
+        <input type="checkbox"> Remember Me?<br/><br/>
+        <button type="submit">LOGIN</button><br/>
+        <a href="">Forgot password?</a><br/> 
+        <h4>OR</h4>
+        <a href=""> <ion-icon name="logo-facebook"></ion-icon></a> 
+        <a href=""> <ion-icon name="logo-google"></ion-icon></a> 
+        <a href=""> <ion-icon name="logo-twitter"></ion-icon></a><br/>
+        Don't have an account? <a href="register.html"> <span style='font-weight : bold;'>Sign Up!</span></a>
+    </div>
+</section>
+<!-- Section Footer -->
+<!-- <section class="footer">
+    <div class="footer-box">
+        <h2>AAMP SHOES</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti veritatis, reprehend
+            erit aperiam distinctio libero perferendis a odio quasi velit repudiandae.</p>
+        <div class="social">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-instagram' ></i>
+        </div>
+    </div>
+    <div class="footer-box">
+        <h2>Support</h2>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Terms Of Use</a></li>
+        <li><a href="#">Return Of Policy</a></li>
+    </div>
+    <div class="footer-box">
+        <h2>Services</h2>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Warranty Policy</a></li>
+        <li><a href="#">Our Branches</a></li>
+    </div>
+
+    <div class="footer-box">
+        <h2>Contact-Us</h2>
+        <div class="contact">
+            <span><i class='bx bxs-map'></i>DilliBazar, Kathmandu, Nepal</span>
+            <span><i class='bx bxs-phone'></i>012549785</span>
+            <span><i class='bx bxl-gmail' ></i>ammp@gmail.com</span>
+        </div>
+    </div> -->
+</section> 
+
+<!-- Copyright Section -->
+<!-- <div class="copyright">
+    <p>&#169; AampShoes All Right Reserved </p>
+</div> -->
+</body>
+</html>
