@@ -11,6 +11,8 @@
     <!-- TO Link BOXICON Icons -->
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- To Link Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +25,7 @@
     <!-- Navbar -->
     <header id="Shoe_World">
         <a href="#landing_page" class="shoe_logo">
-            <img src="./img/Shoe_Logo.png" alt="Shoe_World">
+            <img src="./img/Shoe_Logo.png" alt="AampShoes">
         </a>
 
         <!-- Menu Bar -->
@@ -33,16 +35,21 @@
         <ul class="navbar">
             <li><a href="index.html">Home</a></li>
             <li><a href="men.html">Men's Wear</a></li>
-            <li><a href="#products">Women Wear</a></li>
-            <li><a href="#products">Kids</a></li>
+            <li><a href="women.html">Women's Wear</a></li>
+            <li><a href="kid.html">Kids</a></li>
             <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#connect">Login/Register</a></li>
+            <!-- <li><a href="register.html">Login/Register</a></li> -->
         </ul>
 
         <div class="header_icon">
-            <!-- Cart Icon -->
-            <i class='bx bxs-cart'></i>
+            <!-- location -->
+           <a href=""><h6>find location</h6><ion-icon name="location-outline"></ion-icon></a> 
+           <!-- Account -->
+           <a href="register.html"><h6>Account</h6><ion-icon name="person-circle-outline"></ion-icon></a>
+           <!-- Cart  -->
+           <a href=""><h6>Cart</h6><i class='bx bxs-cart'></i></a>
         </div>
+        
     </header>
 
     <!-- Landing Page -->
@@ -66,7 +73,7 @@
 
     <section class="products" id="products">
         <div class="heading">
-            <h2 style="color:greenyellow;">Trending Products</h2>
+            <h3 style="color:greenyellow;">Trending Products</h3>
         </div>
 
         <!-- Container  -->
@@ -133,7 +140,6 @@
                 <i class='bx bxl-facebook'></i>
                 <i class='bx bxl-twitter' ></i>
                 <i class='bx bxl-instagram' ></i>
-                <i class='bx bxl-youtube' ></i>
             </div>
         </div>
         <div class="footer-box">

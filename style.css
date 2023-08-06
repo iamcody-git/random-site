@@ -69,21 +69,20 @@ header{
     font-weight: 600;
     border-radius: 15px;
     background-color: rgb(79, 7, 7);
-    color:rgb(255, 255, 255);
+    color:rgb(24, 128, 24);
 
 }
 
 .header_icon{
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
     z-index: 1;
-     display: flex;
-    column-gap: 1.9rem; 
-    color: aliceblue;
+    display: flex;
+    column-gap:1.9rem; 
 }
 
-.header_icon .bx:hover{
-    color: red;
+.header_icon a{
+    color: green;
 }
 
 #hamburg_icon{
@@ -93,6 +92,9 @@ header{
     cursor: pointer;
     display: none;
     text-align: center;
+}
+.main-container{
+    background-color: rgb(139, 134, 134);
 }
 
 /* Landing Page */
@@ -582,3 +584,45 @@ img{
         font-size: 0.8rem;
     }
 }
+
+/* login/register css */
+/* 
+h3{
+    color: rgb(65, 128, 65);
+}
+.mainContainer {
+    background-color: rgb(254, 204, 204);
+    width: 300px;
+    height: 380px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+    padding:7px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.container h3 {
+    margin-top: 10px; 
+}
+
+.container button {
+    width: 60%;
+    background-color: rgb(61, 61, 124);
+    color: white; 
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    height: 30px;
+}
+h4 {
+    display: flex;
+    flex-direction: row;
+}
+h4:before,
+h4:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+} */
