@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Prompt:wght@600&display=swap" rel="stylesheet">
+
+    <!-- type js animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     
 </head>
 <body>
@@ -60,12 +63,23 @@
 
     <section class="home" id="landing_page">
         <div class="home_page_text">
-            <h1>The journey <span>begins</span> with perfect pair</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, animi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut blanditiis est, laboriosam,
-                 id dicta ea iusto vero vitae pariatur porro iste sapiente in ab nihil maxime harum
-                 quam? Laborum, nulla.
-            </p>
+            <h1>Your Journey, Our Shoes and We Focus on </h1>
+           <h2> <span id="element"></span></h2>
+
+            <!-- Load library from the CDN -->
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+          
+            <!-- Setup and start animation! -->
+            <script>
+              var typed = new Typed('#element', {
+                strings: ['Comfort', 'Style','Your Design','And Quality'],
+                typeSpeed: 50,
+              });
+            </script>
             <a href="#products" class="button">More Articles</a>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, animi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut blanditiis est, laboriosam.
+            </p>
+           
         </div>
 
         <div class="home_image">
